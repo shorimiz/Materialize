@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!--Import Google Icon Font-->
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!--Import jQuery before materialize.js-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+
+	<script>
+		
+			$(function(){
+
+
+				//***** Enter your tag text *****
+				$('xxx').material_chip();
+
+				//***** Set initial tags *****
+				$('.chips-initial').material_chip({
+				readOnly: true,
+				data: [{
+					tag: 'Shahar',
+				}, {
+					tag: 'Boaz',
+				}, {
+					tag: 'Mike',
+				}]
+				});
+
+				
+				//***** Set initial tags *****
+				$('.chips-placeholder').material_chip({
+				placeholder: 'Enter a tag',
+				secondaryPlaceholder: '+Tag',
+				});
+
+			});
+		
+	</script>
+</head>
+
+<body style="margin:10px">
+
+
+	<div id="basic" class="section scrollspy">
+		<h4>Javascript Plugin Usage</h4>
+
+		<!-- Enter your tag text -->
+		<p class="caption">To add tags, just enter your tag text and press enter. You can delete them by clicking on the close icon or by using your
+			delete button.</p>
+		<div class="chips xxx"><input class="input" placeholder=""></div>
+
+		<!-- Set initial tags -->
+		<p class="caption">Set initial tags.</p>
+		<div class="chips chips-initial"></div>
+
+		<!-- Use placeholders and override hint text -->
+		<p class="caption">Use placeholders and override hint texts.</p>
+		<div class="chips chips-placeholder"><input class="input" placeholder="+Tag"></div>
+	</div>
+
+
+
+</body>
+
+</html>
